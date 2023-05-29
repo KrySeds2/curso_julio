@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'curso';
+
+  list=[
+    {
+      title:'Fiji',
+      version:'0.1',
+      describe: 'lorem',
+      id:'id1',
+      custom:true
+    },
+    {
+      title:'Nicaragua',
+      version:'0.1',
+      describe: 'lorem',
+      id:'id1',
+      custom:false
+    }
+  ]
 }

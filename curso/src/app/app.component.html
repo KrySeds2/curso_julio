@@ -1,1 +1,9 @@
-<custom-parent-a></custom-parent-a>
+<!-- <custom-parent-a></custom-parent-a> -->
+<!-- <app-list-cards></app-list-cards> -->
+<app-list-items2 [values]="list">
+  <!-- <div *ngFor="let item of list"> -->
+    <ng-template appBody let-data >
+      {{data.title}}
+    </ng-template>
+  <!-- </div> -->
+</app-list-items2>

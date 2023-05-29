@@ -8,6 +8,9 @@ import { ChildAComponent } from './components/child-a/child-a.component';
 import { ChildBComponent } from './components/child-b/child-b.component';
 import { ListCardsComponent } from './components/list-cards/list-cards.component';
 import { ParentAComponent } from './components/parent-a/parent-a.component';
+import { Item2Component } from './components/content-transfer-data/item2/item2.component';
+import { ListItems2Component } from './components/content-transfer-data/list-items2/list-items2.component';
+import { BodyDirective } from './components/content-transfer-data/body.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { ParentAComponent } from './components/parent-a/parent-a.component';
     ChildAComponent,
       ChildBComponent,
       ListCardsComponent,
-      ParentAComponent
+      ParentAComponent,
+      Item2Component,
+      ListItems2Component,
+      BodyDirective
    ],
   imports: [
     BrowserModule,
