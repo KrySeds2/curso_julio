@@ -13,7 +13,7 @@
 <app-list-items2 [values]="list">
 <table>
   <ng-template appHeader>
-      <tr class="grid th col-12">
+      <tr class="grid grid-nogutter th col-12">
           <th style=" width: 25%;" >Titulo</th>
           <th style=" width: 35%;">Descripcion</th>
           <th style=" width: 20%;">Version</th>
@@ -21,7 +21,7 @@
       </tr>
   </ng-template>
   <ng-template appBody let-info>
-      <tr class="grid tr col-12">
+      <tr class="grid grid-nogutter tr col-12">
           <td  style="width: 25%; text-align: center;" >{{ info.title }}</td>
           <td  style=" width: 35%; text-align: center;">{{ info.describe }}</td>
           <td  style="width: 20%; text-align: center;">{{ info.version }}</td>

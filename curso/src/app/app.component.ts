@@ -21,7 +21,7 @@ export class AppComponent {
       version:'0.1',
       describe: 'lorem ipsum dolor sit amet, consectetur adipiscing',
       id:'id2',
-      custom:true
+      custom:false
     },
     {
       title:'TAS360 PEMEX',
@@ -35,7 +35,7 @@ export class AppComponent {
       version:'0.1',
       describe: 'lorem ipsum dolor sit amet, consectetur adipiscing',
       id:'id4',
-      custom:true
+      custom:false
     },
     {
       title:'TAS360 v2',
@@ -49,7 +49,7 @@ export class AppComponent {
       version:'0.2',
       describe: 'lorem ipsum dolor sit amet, consectetur adipiscing',
       id:'id6',
-      custom:true
+      custom:false
     }
   ]
 }
