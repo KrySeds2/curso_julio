@@ -1,4 +1,4 @@
-import { BodyDirective } from './body.directive';
+import { BodyDirective } from "../directives/body.directive";
 
 describe('BodyDirective', () => {
   it('should create an instance', () => {
