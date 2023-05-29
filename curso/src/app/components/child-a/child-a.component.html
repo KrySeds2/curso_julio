@@ -1,0 +1,16 @@
+<div (click)="onChange()"  class="container scrollbar" [ngClass]="{
+  'selected':selected
+}">
+  <div class="col-12 grid">
+    <div class="col-4">
+      <img class="img" src="{{ data.image}}" alt="Imagen">
+    </div>
+   <div class="col-8">
+    <p>{{data.title+'-'}} <span>{{data.total}}</span></p>
+    <p>
+      {{'Version: '+data.version}}
+    </p>
+   </div>
+  </div>
+
+</div>
