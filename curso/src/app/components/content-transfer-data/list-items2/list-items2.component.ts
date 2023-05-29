@@ -1,5 +1,6 @@
 import { Component, ContentChild, Input, TemplateRef } from '@angular/core';
-import { BodyDirective } from '../body.directive';
+import { BodyDirective } from '../../directives/body.directive';
+import { HeaderDirective } from '../../directives/header.directive';
 
 @Component({
   selector: 'app-list-items2',
@@ -15,4 +16,31 @@ export class ListItems2Component {
   // }];
   @Input() values:any
   @ContentChild(BodyDirective,{read:TemplateRef})bodyTemplate:any;
+  @ContentChild(HeaderDirective,{read:TemplateRef})headerTemplate:any;
+
+  custom(){
+    // console.log('El valor de custom esta en false');
+    return{
+      'font-weight':'bold',
+      'font-size':'1rem',
+      'color':'blue',
+      'text-align':'center',
+      'width':'100%',
+
+
+    };
+  }
+    custom1(){
+      // console.log('El valor de custom esta en false');
+      return{
+        // 'font-weight':'bold',
+        'font-size':'1rem',
+        'color':'green',
+        'text-align':'left',
+        'width':'100%',
+
+      };
+    }
+
+
 }

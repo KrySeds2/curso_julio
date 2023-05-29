@@ -9,17 +9,29 @@
 <div *ngFor="let item of list" [ngClass]="{'status':item.status}">
   <div style="padding: 5px">BODY {{ item.status }}</div>
 </div> -->
-
-<div *ngFor="let item of values">
-  <hr>
-  <ng-container *ngIf="item.custom">
-    <ng-container *ngTemplateOutlet="bodyTemplate; context:{
-      $implicit:item,
-      title:item.title
-    }"></ng-container>
-  </ng-container>
-  <ng-container *ngIf="!item.custom">
-   {{item | json}}
-  </ng-container>
-
+<div class=" col-12 container">
+  <div class="col-12">
+    <ng-container *ngTemplateOutlet="headerTemplate;"></ng-container>
+  </div>
+  <div class="col-12">
+    <div *ngFor="let item of values">
+      <ng-container *ngIf="item.custom">
+        <div class="col-12">
+          <ng-container *ngTemplateOutlet="bodyTemplate; context:{
+            $implicit:item
+          }"></ng-container>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="!item.custom">
+        <div [ngStyle]="custom()" class=" col-12">
+          <ng-container *ngTemplateOutlet="bodyTemplate; context:{
+              $implicit:item
+            }"></ng-container>
+        </div>
+        <div [ngStyle]="custom1()" class=" col-12">
+          La propiedad custom de {{item.title}} se encuentra en false
+        </div>
+      </ng-container>
+    </div>
+  </div>
 </div>
