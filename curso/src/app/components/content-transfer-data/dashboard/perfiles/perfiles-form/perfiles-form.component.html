@@ -1,0 +1,40 @@
+<div class=" grid grid-container " style="padding-top: 2rem; padding-left: 1rem;">
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <div class=" grid grid">
+      <div class="col-12 md:col-12 header">
+        <span>
+          <p class="headerTitle">Formulario de registro</p>
+          <hr>
+        </span>
+      </div>
+      <div class="col-12 md:col-5 input">
+        <span class="p-fluid p-float-label">
+          <input pInputText  size="30" formControlName="alias" [ngClass]="{}"/>
+          <label for="float-input">Alias</label>
+          <div class="validation-message"  *ngIf="form.get('alias').invalid">El campo Alias es requerido</div>
+        </span>
+      </div>
+      <div class="col-12 md:col-5 input">
+        <span class="p-fluid p-float-label">
+          <input pInputText id="descripcion" formControlName="descripcion" />
+          <label htmlFor="descripcion">Descripcion</label>
+          <div class="validation-message"  *ngIf="form.get('descripcion').invalid">El campo descripcion es requerido</div>
+        </span>
+      </div>
+      <div class="col-12 md:col-5 input">
+        <span class="p-fluid p-float-label">
+          <input pInputText id="contacto" formControlName="contacto" />
+          <label htmlFor="contacto">contacto</label>
+          <div class="validation-message"  *ngIf="form.get('contacto').invalid">El campo Contacto es requerido</div>
+        </span>
+      </div>
+      <div class="col-6"></div>
+      <div class="col-12 md:col-2 input" >
+        <span class="p-fluid p-float-label">
+          <button pButton pRipple label="Finalizar" class="p-button-success" type="submit"></button>
+        </span>
+      </div>
+    </div>
+  </form>
+
+</div>

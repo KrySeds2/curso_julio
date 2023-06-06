@@ -1,0 +1,24 @@
+<div class=" col-12">
+  <p-table [value]="list" [tableStyle]="{ 'min-width': '50rem ' }" styleClass="p-datatable-striped">
+
+    <ng-template pTemplate="header">
+
+      <tr>
+        <th style="text-align: center; background-color: cornflowerblue; ">Id</th>
+        <th style="text-align: center; background-color: cornflowerblue;">Nombre</th>
+        <th style="text-align: center; background-color: cornflowerblue;">Correo</th>
+        <th style="text-align: center; background-color: cornflowerblue;">Ciudad</th>
+        <th style="text-align: center; background-color: cornflowerblue;">Telefono</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-list>
+      <tr [style.color]="list.status ? '' : '#E7E7E7'">
+        <td style="text-align: center;">{{ list.id }}</td>
+        <td style="text-align: center;">{{ list.nombre }}</td>
+        <td style="text-align: center;">{{ list.correo }}</td>
+        <td style="text-align: center;">{{ list.ciudad }}</td>
+        <td style="text-align: center;">{{ list.telefono }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>

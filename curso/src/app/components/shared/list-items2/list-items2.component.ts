@@ -1,6 +1,6 @@
 import { Component, ContentChild, Input, TemplateRef } from '@angular/core';
-import { BodyDirective } from '../../directives/body.directive';
-import { HeaderDirective } from '../../directives/header.directive';
+import { BodyDirective } from '../directives/body.directive';
+import { HeaderDirective } from '../directives/header.directive';
 
 @Component({
   selector: 'app-list-items2',

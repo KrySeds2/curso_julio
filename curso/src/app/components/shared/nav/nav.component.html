@@ -1,0 +1,29 @@
+<mat-sidenav-container  fullscreen class="" style="text-align: center;">
+  <mat-sidenav  #sidenav mode="side" opened style="background-color: lavender;">
+    <mat-toolbar style="background-color: cornflowerblue; ">
+      <P style="color: aliceblue;">Menu principal</P>
+
+    </mat-toolbar>
+    <mat-nav-list >
+      <a routerLink="./users" mat-list-item (click)="sidenav.open()">
+        <span >Usuarios</span>
+      </a>
+    </mat-nav-list>
+    <mat-nav-list>
+      <a routerLink="./profile" mat-list-item (click)="sidenav.open()">
+        <span>Perfiles</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-toolbar style="background-color: cornflowerblue;" >
+    <i class="pi pi-bars" (click)="sidenav.toggle()" style="font-size: 2rem"></i>
+    <div class="grid grid-nogutter col-12" style="align-items: end; padding-left: 63%; ">
+      <p class="text">Usuario1234</p>
+      <img src="../../../../assets/img/user.png" class="imageSalir" />
+    </div>
+  </mat-toolbar>
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</mat-sidenav-container>

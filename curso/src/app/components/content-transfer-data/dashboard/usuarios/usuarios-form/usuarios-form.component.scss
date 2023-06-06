@@ -1,0 +1,25 @@
+.validation-message {
+  text-align: left;
+  color: red;
+  margin-top: 0.5rem;
+}
+.header{
+  border-bottom: 1px solid var(#5C5C5C);
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 700;
+  text-align: left;
+  }
+  .header span{
+      display: block;
+  }
+  .header .headerTitle{
+      color:black;
+      font-size: 1.8em;
+      font-weight: 400;
+  }
+
+  .input{
+   margin-top: 1em;
+  }

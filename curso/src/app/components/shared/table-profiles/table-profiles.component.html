@@ -1,0 +1,25 @@
+<div class="col-12">
+  <p-table [value]="list" [tableStyle]="{ 'min-width': '50rem' }" styleClass="p-datatable-striped">
+
+    <ng-template pTemplate="header">
+      <tr>
+        <th style="text-align: center; background-color: cornflowerblue;">Id</th>
+        <th style="text-align: center; background-color: cornflowerblue;">Alias</th>
+        <th style="text-align: center; background-color: cornflowerblue;">Descripcion</th>
+        <th style="text-align: center; background-color: cornflowerblue;">Contacto</th>
+        <!-- <th style="text-align: center; background-color: cornflowerblue;">Activo</th> -->
+      </tr>
+    </ng-template>
+
+    <ng-template pTemplate="body" let-list>
+      <tr [style.background-color]="list.activo ? '' : '#E7E7E7'">
+        <td style="text-align: center;">{{ list.id }}</td>
+        <td style="text-align: center;">{{ list.alias }}</td>
+        <td style="text-align: center;">{{ list.descripcion }}</td>
+        <td style="text-align: center;">{{ list.contacto }}</td>
+        <!-- <td style="text-align: center;">{{ list.activo }}</td> -->
+      </tr>
+    </ng-template>
+
+  </p-table>
+</div>
